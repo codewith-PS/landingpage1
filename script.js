@@ -40,6 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  // Close menu button logic
+  const closeMenu = document.getElementById('close-menu');
+  if (closeMenu) {
+    closeMenu.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      const icon = menuToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+  }
 
   // 3. Scroll Progress Bar
   const progressBar = document.getElementById('scroll-progress');
