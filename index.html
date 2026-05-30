@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <title>RGs Pleiaddes | 3 & 4 BHK Luxury Apartments Sector 1 Noida Extension</title>
+  <meta name="description"
+    content="Welcome to RGs Pleiaddes, Sector 1, Noida Extension. Explore premium 3 & 4 BHK luxury residences starting at ₹ 1.10 Cr*. Modern lifestyle, 50,000 sq.ft. clubhouse, 70% green area.">
+  <link rel="icon" type="image/png" href="images/logodark.png">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#hero">
+          <img src="images/logodark.png" alt="RGs Pleiaddes Logo">
+        </a>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#prices" class="nav-link">Price List</a>
+        <a href="#floorplans" class="nav-link">Floor Plans</a>
+        <a href="#payment" class="nav-link">Payment Plan</a>
+        <a href="#amenities" class="nav-link">Amenities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#location" class="nav-link">Location</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-cta d-none-mobile">
+        <button class="btn-gold" onclick="openEnquiryModal('General Inquiry')">Enquire Now</button>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-slider">
+      <div class="slide active" style="background-image: url('images/website_images/KVIR_NEW_VIEW_001_TWILIGHT.jpg');">
+      </div>
+      <div class="slide" style="background-image: url('images/website_images/ELEVATION_VIEW_002_DUSK.jpg');"></div>
+      <div class="slide" style="background-image: url('images/website_images/PODIUM_LANDSCAPE_VIEW_DAY.jpg');"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content reveal-item">
+        <span class="hero-tag">Signature Landmark</span>
+        <h1 class="hero-title heading-serif">RGs Pleiaddes</h1>
+        <p class="price-tag">3 & 4 BHK Luxury Apartments | Starting ₹ 1.10 Cr*</p>
+
+        <ul class="hero-bullets">
+          <li><i class="fa-solid fa-circle-check"></i> 3 Side Open Plot Layout</li>
+          <li><i class="fa-solid fa-circle-check"></i> 8 Acres | 6 Standalone Towers</li>
+          <li><i class="fa-solid fa-circle-check"></i> 11 & 12 Ft. Premium Ceiling Heights</li>
+          <li><i class="fa-solid fa-circle-check"></i> Over 70% Open Landscaped Green Area</li>
+          <li><i class="fa-solid fa-circle-check"></i> Grand 50,000 Sqft. Clubhouse</li>
+          <li><i class="fa-solid fa-circle-check"></i> 100% Fully Paid Up Land</li>
+        </ul>
+
+        <div class="hero-actions">
+          <button class="btn-gold" onclick="openEnquiryModal('Download Brochure')">Download Brochure</button>
+          <a href="#about" class="btn-outline" style="margin-left: 15px;">Explore More</a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-wrapper reveal-item" style="transition-delay: 0.2s;">
+        <div class="glass-form-card">
+          <h2 class="form-title heading-serif">Schedule A Visit</h2>
+          <p class="form-subtitle">Register below to unlock exclusive inaugural offers</p>
+
+          <form id="hero-enquiry-form" onsubmit="handleFormSubmit(event, 'Hero Enquiry Form')">
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder="Full Name" required name="name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder="Email Address" required name="email">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-input" placeholder="Mobile Number" required name="phone"
+                pattern="[0-9]{10}">
+            </div>
+            <div class="form-group select-wrapper">
+              <select class="form-input" required name="requirement">
+                <option value="" disabled selected>Select Requirement</option>
+                <option value="3 BHK (1276 Sq.Ft.)">3 BHK (1276 Sq.Ft.)</option>
+                <option value="3 BHK (1572 Sq.Ft.)">3 BHK (1572 Sq.Ft.)</option>
+                <option value="4 BHK (2185 Sq.Ft.)">4 BHK (2185 Sq.Ft.)</option>
+                <option value="Other Requirements">Other Requirements</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-gold">Request Best Offer</button>
+          </form>
+          <span class="rera-badge">RERA Reg No: UPRERAPRJ415309/09/2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-item">
+          <div class="about-image"
+            style="background-image: url('images/website_images/KVIR_AERIAL_VIEW_001_TWILIGHT.jpg');"></div>
+          <div class="about-badge">
+            <span class="number">8</span>
+            <span class="label">Acres of Oasis</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal-item" style="transition-delay: 0.2s;">
+          <span class="section-subtitle">The Legacy of Luxury</span>
+          <h2 class="section-title heading-serif" style="text-align: left; padding-bottom: 15px; margin-bottom: 25px;">
+            About RG Pleiaddes</h2>
+          <p class="about-desc">
+            RG Pleiaddes is an elite residential development nested in the prime corridor of Sector 1, Noida Extension.
+            Meticulously masterplanned across 8 stunning acres, it establishes a perfect balance of contemporary luxury
+            architecture and functional green spaces. Highlighting an iconic presence, it incorporates 6 majestic towers
+            soaring up to 29 floors.
+          </p>
+          <p class="about-desc">
+            Emphasizing a rejuvenating lifestyle, over 70% of the land is dedicated to landscape gardens, water
+            features, and jogging tracks. Offering utmost exclusivity and privacy, each tower features private lift
+            lobbies with high-speed elevators. The project features a grand 50,000 sq.ft. clubhouse featuring custom
+            amenities carefully integrated to elevate your daily living experience.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+              <div class="feature-text">
+                <h4>3 Side Open Layout</h4>
+                <p>Ensuring maximum air flow and natural light in every room.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div class="feature-text">
+                <h4>6 Iconic Towers</h4>
+                <p>Only 8 units per floor with 5 high-speed lifts per tower.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Usable Area Efficiency</h4>
+                <p>Modern layouts designed with minimal wastage and maximum room.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-wrapper">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Vastu-Compliant</h4>
+                <p>Every flat is architecturally aligned to foster positive energy flow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prices Section -->
+  <section class="prices" id="prices">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-subtitle">Exquisite Value</span>
+        <h2 class="section-title heading-serif">Pricing & Configurations</h2>
+      </div>
+
+      <div class="prices-grid">
+        <!-- 3 BHK Card -->
+        <div class="price-card reveal-item">
+          <span class="card-badge">Most Popular</span>
+          <h3 class="heading-serif">3 BHK Residences</h3>
+
+          <div class="price-details">
+            <div class="price-row">
+              <span class="price-label">Super Area:</span>
+              <span class="price-val">1276 Sq.Ft. to 1572 Sq.Ft.</span>
+            </div>
+            <div class="price-row">
+              <span class="price-label">Configurations:</span>
+              <span class="price-val">3 Bedrooms + 2/3 Toilets + Balconies</span>
+            </div>
+            <div class="price-row">
+              <span class="price-label">Starting Price:</span>
+              <span class="price-amount">₹ 1.10 Cr*</span>
+            </div>
+          </div>
+
+          <button class="btn-outline" onclick="openEnquiryModal('Inquire about 3 BHK Price List')">Get Complete Price
+            List</button>
+        </div>
+
+        <!-- 4 BHK Card -->
+        <div class="price-card reveal-item" style="transition-delay: 0.2s;">
+          <h3 class="heading-serif">4 BHK Residences</h3>
+
+          <div class="price-details">
+            <div class="price-row">
+              <span class="price-label">Super Area:</span>
+              <span class="price-val">2185 Sq.Ft.</span>
+            </div>
+            <div class="price-row">
+              <span class="price-label">Configurations:</span>
+              <span class="price-val">4 Bedrooms + 3 Toilets + Lounge + Balconies</span>
+            </div>
+            <div class="price-row">
+              <span class="price-label">Starting Price:</span>
+              <span class="price-amount">₹ On Request</span>
+            </div>
+          </div>
+
+          <button class="btn-outline" onclick="openEnquiryModal('Inquire about 4 BHK Price List')">Request Special
+            Pricing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Plans Section -->
+  <section class="floorplans" id="floorplans">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-subtitle">Designed to Perfection</span>
+        <h2 class="section-title heading-serif">Floor Configurations</h2>
+      </div>
+
+      <div class="floorplan-tabs reveal-item">
+        <button class="tab-btn active" onclick="switchFloorplan(0)">3 BHK + 2 Toilet</button>
+        <button class="tab-btn" onclick="switchFloorplan(1)">3 BHK + 3 Toilet</button>
+        <button class="tab-btn" onclick="switchFloorplan(2)">4 BHK + 3 Toilet</button>
+        <button class="tab-btn" onclick="switchFloorplan(3)">4 BHK + 3 Toilet + Lounge</button>
+      </div>
+
+      <!-- Tab 0: 3BHK + 2 Toilet -->
+      <div class="floorplan-content active reveal-item" id="fp-tab-0">
+        <div class="floorplan-image"
+          onclick="openLightbox('images/New_Floor_Plan/1.webp', '3 BHK + 2 Toilet Floor Plan')">
+          <img src="images/New_Floor_Plan/1.webp" alt="3 BHK + 2 Toilet Plan">
+          <div class="image-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom
+          </div>
+        </div>
+        <div class="floorplan-info">
+          <h3 class="heading-serif">3 BHK + 2 Toilet</h3>
+          <div class="floorplan-specs">
+            <div class="spec-row">
+              <span class="spec-name">Super Area</span>
+              <span class="spec-val">1276 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Carpet Area</span>
+              <span class="spec-val">Approx. 950 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Bedrooms</span>
+              <span class="spec-val">3 Spacious Bedrooms</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Toilets</span>
+              <span class="spec-val">2 Fully Fitted Toilets</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Balconies</span>
+              <span class="spec-val">3 Wide Airy Balconies</span>
+            </div>
+          </div>
+          <button class="btn-gold" onclick="openEnquiryModal('Request Floor Plan Details: 3 BHK + 2T')">Request Brochure
+            PDF</button>
+        </div>
+      </div>
+
+      <!-- Tab 1: 3BHK + 3 Toilet -->
+      <div class="floorplan-content reveal-item" id="fp-tab-1">
+        <div class="floorplan-image"
+          onclick="openLightbox('images/New_Floor_Plan/2.webp', '3 BHK + 3 Toilet Floor Plan')">
+          <img src="images/New_Floor_Plan/2.webp" alt="3 BHK + 3 Toilet Plan">
+          <div class="image-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom
+          </div>
+        </div>
+        <div class="floorplan-info">
+          <h3 class="heading-serif">3 BHK + 3 Toilet</h3>
+          <div class="floorplan-specs">
+            <div class="spec-row">
+              <span class="spec-name">Super Area</span>
+              <span class="spec-val">1572 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Carpet Area</span>
+              <span class="spec-val">Approx. 1150 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Bedrooms</span>
+              <span class="spec-val">3 Master Bedrooms</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Toilets</span>
+              <span class="spec-val">3 Elegant Bathrooms</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Balconies</span>
+              <span class="spec-val">4 Spaced-Out Balconies</span>
+            </div>
+          </div>
+          <button class="btn-gold" onclick="openEnquiryModal('Request Floor Plan Details: 3 BHK + 3T')">Request Brochure
+            PDF</button>
+        </div>
+      </div>
+
+      <!-- Tab 2: 4BHK + 3 Toilet -->
+      <div class="floorplan-content reveal-item" id="fp-tab-2">
+        <div class="floorplan-image"
+          onclick="openLightbox('images/New_Floor_Plan/3.webp', '4 BHK + 3 Toilet Floor Plan')">
+          <img src="images/New_Floor_Plan/3.webp" alt="4 BHK + 3 Toilet Plan">
+          <div class="image-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom
+          </div>
+        </div>
+        <div class="floorplan-info">
+          <h3 class="heading-serif">4 BHK + 3 Toilet</h3>
+          <div class="floorplan-specs">
+            <div class="spec-row">
+              <span class="spec-name">Super Area</span>
+              <span class="spec-val">2185 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Carpet Area</span>
+              <span class="spec-val">Approx. 1600 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Bedrooms</span>
+              <span class="spec-val">4 Premium Bedrooms</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Toilets</span>
+              <span class="spec-val">3 Premium Toilets</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Balconies</span>
+              <span class="spec-val">4 High View Balconies</span>
+            </div>
+          </div>
+          <button class="btn-gold" onclick="openEnquiryModal('Request Floor Plan Details: 4 BHK + 3T')">Request Brochure
+            PDF</button>
+        </div>
+      </div>
+
+      <!-- Tab 3: 4BHK + 3 Toilet + Lounge -->
+      <div class="floorplan-content reveal-item" id="fp-tab-3">
+        <div class="floorplan-image"
+          onclick="openLightbox('images/New_Floor_Plan/4.webp', '4 BHK + 3 Toilet + Lounge Floor Plan')">
+          <img src="images/New_Floor_Plan/4.webp" alt="4 BHK + 3 Toilet + Lounge Plan">
+          <div class="image-zoom-hint">
+            <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom
+          </div>
+        </div>
+        <div class="floorplan-info">
+          <h3 class="heading-serif">4 BHK + 3 Toilet + Lounge</h3>
+          <div class="floorplan-specs">
+            <div class="spec-row">
+              <span class="spec-name">Super Area</span>
+              <span class="spec-val">2185 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Carpet Area</span>
+              <span class="spec-val">Approx. 1650 Sq.Ft.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Bedrooms</span>
+              <span class="spec-val">4 Wide Bedrooms</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Additional Space</span>
+              <span class="spec-val">Family Lounge Room</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Toilets & Balconies</span>
+              <span class="spec-val">3 Toilets + 4 Balconies</span>
+            </div>
+          </div>
+          <button class="btn-gold" onclick="openEnquiryModal('Request Floor Plan Details: 4 BHK + Lounge')">Request
+            Brochure PDF</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Plan & RERA Registration -->
+  <section class="payment-section" id="payment">
+    <div class="container">
+      <div class="payment-grid">
+        <div class="payment-info reveal-item">
+          <span class="section-subtitle">Smart Investments</span>
+          <h2 class="payment-title heading-serif"
+            style="color: var(--text-primary); font-size: 2.5rem; margin-bottom: 25px;">Flexible Payment Plans</h2>
+          <p class="payment-desc">
+            We provide a transparent, buyer-friendly roadmap. Empowering home-seekers to customize construction
+            milestone payments. Discover our stress-free scheduling options.
+          </p>
+
+          <div class="payment-steps">
+            <div class="payment-step">
+              <div class="step-num">1</div>
+              <div class="step-details">
+                <h4>10% Booking Amount</h4>
+                <p>Secure your unit configuration and block the launch rate.</p>
+              </div>
+            </div>
+
+            <div class="payment-step">
+              <div class="step-num">2</div>
+              <div class="step-details">
+                <h4>Milestone Payments</h4>
+                <p>Easy construction-linked plan distributed across slab completions.</p>
+              </div>
+            </div>
+
+            <div class="payment-step">
+              <div class="step-num">3</div>
+              <div class="step-details">
+                <h4>Balance on Possession</h4>
+                <p>Pay the final 10% during handover along with registration charges.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="qr-row">
+            <img src="images/QRCodePhase.png" alt="RERA QR Code" class="qr-code">
+            <div class="qr-text">
+              <p>RERA APPROVED PROJECT</p>
+              <strong>UPRERAPRJ415309/09/2025</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-image-wrapper reveal-item" style="transition-delay: 0.2s;">
+          <img src="images/Payment_plan.png" alt="Payment Plan Detail Table" class="payment-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section class="amenities" id="amenities">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-subtitle">Modern Comforts</span>
+        <h2 class="section-title heading-serif">World Class Amenities</h2>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card reveal-item">
+          <div class="amenity-icon"><i class="fa-solid fa-tree"></i></div>
+          <h4>Lush Green Lawn</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.05s;">
+          <div class="amenity-icon"><i class="fa-solid fa-wine-glass"></i></div>
+          <h4>Banquet Hall</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.1s;">
+          <div class="amenity-icon"><i class="fa-solid fa-person-running"></i></div>
+          <h4>Jogging Track & Gym</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.15s;">
+          <div class="amenity-icon"><i class="fa-solid fa-couch"></i></div>
+          <h4>Deck Seating</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.2s;">
+          <div class="amenity-icon"><i class="fa-solid fa-water"></i></div>
+          <h4>Water Feature</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.25s;">
+          <div class="amenity-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h4>Senior Citizen Park</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.3s;">
+          <div class="amenity-icon"><i class="fa-solid fa-child-reaching"></i></div>
+          <h4>Yoga & Aerobics</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.35s;">
+          <div class="amenity-icon"><i class="fa-solid fa-basketball"></i></div>
+          <h4>Basketball Court</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.4s;">
+          <div class="amenity-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h4>Billiard/Cards Room</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.45s;">
+          <div class="amenity-icon"><i class="fa-solid fa-person-swimming"></i></div>
+          <h4>Swimming Pool</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.5s;">
+          <div class="amenity-icon"><i class="fa-solid fa-shapes"></i></div>
+          <h4>Toddlers' Play Area</h4>
+        </div>
+
+        <div class="amenity-card reveal-item" style="transition-delay: 0.55s;">
+          <div class="amenity-icon"><i class="fa-solid fa-cubes"></i></div>
+          <h4>Multipurpose Court</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-subtitle">Visual Splendor</span>
+        <h2 class="section-title heading-serif">Project Renderings</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery Items -->
+        <div class="gallery-item reveal-item"
+          onclick="openLightbox('images/website_images/KVIR_CLUBDROP_OFF_VIEW_TWILIGHT.jpg', 'Clubhouse Drop-Off Point View')">
+          <img src="images/website_images/KVIR_CLUBDROP_OFF_VIEW_TWILIGHT.jpg" alt="Clubhouse Drop-Off View"
+            class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Clubhouse Entrance</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.05s;"
+          onclick="openLightbox('images/website_images/AMPHITHEATRE_VIEW_003_TWILIGHT.jpg', 'Open Air Amphitheatre View')">
+          <img src="images/website_images/AMPHITHEATRE_VIEW_003_TWILIGHT.jpg" alt="Amphitheatre Twilight View"
+            class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Amphitheatre View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.1s;"
+          onclick="openLightbox('images/website_images/STILT_AREA_CHESS_COURT_VIEW_DAY.jpg', 'Podium Level Stilt & Chess Area')">
+          <img src="images/website_images/STILT_AREA_CHESS_COURT_VIEW_DAY.jpg" alt="Chess Court Day View"
+            class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Outdoor Activity Area</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.15s;"
+          onclick="openLightbox('images/website_images/CARDS_ROOM.jpg', 'Air-Conditioned Indoor Cards Room')">
+          <img src="images/website_images/CARDS_ROOM.jpg" alt="Cards Room rendering" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Luxury Cards Room</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.2s;"
+          onclick="openLightbox('images/website_images/INDOOR_POOL.jpg', 'All-weather Indoor Swimming Pool')">
+          <img src="images/website_images/INDOOR_POOL.jpg" alt="Indoor Pool rendering" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Indoor Pool</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.25s;"
+          onclick="openLightbox('images/website_images/RESTAURANT_CAM-02.jpg', 'Elegant Clubhouse Dining Lounge')">
+          <img src="images/website_images/RESTAURANT_CAM-02.jpg" alt="Dining Restaurant rendering" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Clubhouse Lounge Restaurant</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.3s;"
+          onclick="openLightbox('images/website_images/AROMA_GARDEN_VIEW_001_DAY.jpg', 'Landscaped Botanical Aroma Garden')">
+          <img src="images/website_images/AROMA_GARDEN_VIEW_001_DAY.jpg" alt="Aroma Garden rendering"
+            class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Botanical Aroma Garden</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.35s;"
+          onclick="openLightbox('images/website_images/TENNIS_COURT_VIEW_001_DAY.jpg', 'International standard Tennis Court')">
+          <img src="images/website_images/TENNIS_COURT_VIEW_001_DAY.jpg" alt="Tennis Court rendering"
+            class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Outdoor Tennis Court</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-item" style="transition-delay: 0.4s;"
+          onclick="openLightbox('images/website_images/KIDS _PLAY_AREA_VIEW_002_DAY.jpg', 'Toddlers & Kids Play Area Sandbox')">
+          <img src="images/website_images/KIDS _PLAY_AREA_VIEW_002_DAY.jpg" alt="Kids Play Area Rendering"
+            class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Children Play Park</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-subtitle">Prime Proximity</span>
+        <h2 class="section-title heading-serif">Location Advantage</h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-list reveal-item">
+          <div class="location-item">
+            <div class="loc-icon-wrapper"><i class="fa-solid fa-car"></i></div>
+            <div class="loc-text">
+              <h4>Central Noida</h4>
+              <p>05 Minutes Drive</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="loc-icon-wrapper"><i class="fa-solid fa-road"></i></div>
+            <div class="loc-text">
+              <h4>FNG, NH-24 & DND Flyway</h4>
+              <p>Easy Seamless Connectivity</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="loc-icon-wrapper"><i class="fa-solid fa-train"></i></div>
+            <div class="loc-text">
+              <h4>Ghaziabad Railway Station</h4>
+              <p>25 Minutes Drive</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="loc-icon-wrapper"><i class="fa-solid fa-plane"></i></div>
+            <div class="loc-text">
+              <h4>Upcoming Jewar Airport</h4>
+              <p>60 Minutes Drive</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="loc-icon-wrapper"><i class="fa-solid fa-plane-departure"></i></div>
+            <div class="loc-text">
+              <h4>IG International Airport</h4>
+              <p>60 Minutes Drive</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Location Map -->
+        <div class="map-wrapper reveal-item" style="transition-delay: 0.2s;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.205244510006!2d77.4262176!3d28.6086207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee2206779435%3A0xe54e3d368e7cc530!2sSector%201%2C%20Bisrakh%20Jalalpur%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201318!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title heading-serif">Contact Us</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card reveal-item">
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Address</h4>
+                <p>GH-14B, Sector 1, Aimnabad, Bisrakh Jalalpur, Greater Noida West, Uttar Pradesh 201318</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone Number</h4>
+                <p><a href="tel:+919818795156">+91 9818795156</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Address</h4>
+                <p><a href="mailto:info@rgspleiaddes.com">info@rgspleiaddes.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-qr-wrapper">
+            <img src="images/QRCodePhase.png" alt="RERA QR code" class="qr-code" style="width: 70px; height: 70px;">
+            <div class="contact-qr-text">
+              <p>RERA APPROVED PROJECT</p>
+              <strong>UPRERAPRJ415309/09/2025</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Details -->
+        <div class="contact-form-wrapper reveal-item" style="transition-delay: 0.2s;">
+          <div class="glass-form-card" style="background: var(--bg-secondary);">
+            <h3 class="form-title heading-serif">Send Us A Message</h3>
+            <p class="form-subtitle">Fill in the details below, and our luxury property consultant will reach out to you
+              within 24 hours.</p>
+
+            <form id="contact-us-form" onsubmit="handleFormSubmit(event, 'Contact Form')">
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder="Your Name" required name="name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-input" placeholder="Email Address" required name="email">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-input" placeholder="Mobile Number" required name="phone"
+                  pattern="[0-9]{10}">
+              </div>
+              <div class="form-group select-wrapper">
+                <select class="form-input" required name="requirement">
+                  <option value="" disabled selected>Select Requirement</option>
+                  <option value="3 BHK (1276 Sq.Ft.)">3 BHK (1276 Sq.Ft.)</option>
+                  <option value="3 BHK (1572 Sq.Ft.)">3 BHK (1572 Sq.Ft.)</option>
+                  <option value="4 BHK (2185 Sq.Ft.)">4 BHK (2185 Sq.Ft.)</option>
+                  <option value="Other Requirements">Other Requirements</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-gold">Submit Details</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logodark.png" alt="RGs Pleiaddes Dark Logo">
+          </div>
+          <p class="footer-desc">
+            RGs Pleiaddes represents Noida Extension's finest boutique residency. Highlighting grand architectural
+            standalone structures and curated wellness features, it defines the future of premium living.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About</a></li>
+            <li><a href="#prices"><i class="fa-solid fa-angle-right"></i> Price & Configurations</a></li>
+            <li><a href="#floorplans"><i class="fa-solid fa-angle-right"></i> Floor Plans</a></li>
+            <li><a href="#amenities"><i class="fa-solid fa-angle-right"></i> Project Amenities</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-angle-right"></i> Renderings Gallery</a></li>
+            <li><a href="#location"><i class="fa-solid fa-angle-right"></i> Connectivity Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Customer Support</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+919818795156"><i class="fa-solid fa-phone"></i> +91 9818795156</a></li>
+            <li><a href="mailto:info@rgspleiaddes.com"><i class="fa-solid fa-envelope"></i> info@rgspleiaddes.com</a>
+            </li>
+            <li><a href="#contact"><i class="fa-solid fa-circle-question"></i> Help & Inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="disclaimer-text">
+        <strong>Disclaimer:</strong> The content, images, floor plans, and renderings shown on this website are
+        indicative and for representation purposes only. The information provided here does not constitute an offer,
+        sale, or commitment. RGs Pleiaddes is registered under Uttar Pradesh RERA Registration Number
+        UPRERAPRJ415309/09/2025. All specifications and plans are subject to change by the developer as per local
+        development rules.
+      </p>
+
+      <div class="copyright-bar">
+        <p>&copy; 2026 RGs Pleiaddes.</p>
+        <p>RERA Registration: UPRERAPRJ415309/09/2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Gallery Modal -->
+  <div class="lightbox" id="gallery-lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <span class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)"><i
+        class="fa-solid fa-chevron-left"></i></span>
+    <div class="lightbox-content">
+      <img src="" alt="Lightbox Image" class="lightbox-img" id="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <span class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)"><i
+        class="fa-solid fa-chevron-right"></i></span>
+  </div>
+
+  <!-- Lead Form Success Popup Modal -->
+  <div class="popup-modal" id="success-modal">
+    <div class="popup-card">
+      <div class="popup-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="heading-serif">Thank You!</h3>
+      <p>Your details have been recorded successfully. Our premium luxury property consultant will reach out to you
+        within 24 hours to schedule your VIP site visit.</p>
+      <button class="btn-gold" onclick="closeSuccessModal()">Close Window</button>
+    </div>
+  </div>
+
+  <!-- Pop-up Enquiry Form Modal -->
+  <div class="popup-form-modal" id="enquiry-modal">
+    <div class="glass-form-card">
+      <span class="form-close-btn" onclick="closeEnquiryModal()">&times;</span>
+      <h2 class="form-title heading-serif" id="popup-form-title">Request Pricing Details</h2>
+      <p class="form-subtitle">Please fill out the information below to unlock the complete brochure and pricing sheet.
+      </p>
+
+      <form id="popup-enquiry-form" onsubmit="handleFormSubmit(event, 'Popup Modal Form')">
+        <input type="hidden" id="popup-form-source" name="source" value="General Inquiry">
+        <div class="form-group">
+          <input type="text" class="form-input" placeholder="Full Name" required name="name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-input" placeholder="Email Address" required name="email">
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-input" placeholder="Mobile Number" required name="phone" pattern="[0-9]{10}">
+        </div>
+        <div class="form-group select-wrapper">
+          <select class="form-input" required name="requirement">
+            <option value="" disabled selected>Select Requirement</option>
+            <option value="3 BHK (1276 Sq.Ft.)">3 BHK (1276 Sq.Ft.)</option>
+            <option value="3 BHK (1572 Sq.Ft.)">3 BHK (1572 Sq.Ft.)</option>
+            <option value="4 BHK (2185 Sq.Ft.)">4 BHK (2185 Sq.Ft.)</option>
+            <option value="Other Requirements">Other Requirements</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-gold">Submit Details</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sticky Bottom Navigation / Floating Action Bar for Mobile -->
+  <div class="sticky-bar">
+    <a href="tel:+919818795156" class="sticky-action-btn call-btn">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919818795156?text=Hi,%20I%20am%20interested%20in%20RGs%20Pleiaddes%20Noida%20Extension."
+      target="_blank" class="sticky-action-btn whatsapp-btn">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="javascript:void(0)" class="sticky-action-btn enquire-btn"
+      onclick="openEnquiryModal('Sticky Bottom Action Bar Mobile')">
+      <i class="fa-solid fa-envelope"></i>
+      <span>Enquire</span>
+    </a>
+  </div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
