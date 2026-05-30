@@ -41,38 +41,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Hero Slideshow Carousel
-  const slides = document.querySelectorAll('.hero-slider .slide');
-  let currentSlideIndex = 0;
-  const slideInterval = 5000; // 5 seconds
+  // 3. Scroll Progress Bar
+  const progressBar = document.getElementById('scroll-progress');
+  if (progressBar) {
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      progressBar.style.width = scrolled + '%';
+    });
+  }
 
-  const nextSlide = () => {
-    if (slides.length > 0) {
-      slides[currentSlideIndex].classList.remove('active');
-      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-      slides[currentSlideIndex].classList.add('active');
-    }
-  };
-  setInterval(nextSlide, slideInterval);
+  // 4. Bidirectional Scroll Reveal Animations (Intersection Observer)
+  // Elements animate IN when scrolling down, and RESET when scrolled back above them
+  const animElements = document.querySelectorAll(
+    '.reveal-item, .reveal-left, .reveal-right, .reveal-scale, .reveal-bottom, .reveal-top'
+  );
 
-  // 4. Scroll Reveal Animations (Intersection Observer)
-  const revealItems = document.querySelectorAll('.reveal-item');
   const revealObserverOptions = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.15
+    rootMargin: '-60px 0px -60px 0px', // Trigger slightly before/after center
+    threshold: 0.08
   };
 
-  const revealObserver = new IntersectionObserver((entries, observer) => {
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        // Entering viewport — play animation
         entry.target.classList.add('revealed');
-        observer.unobserve(entry.target); // Animates only once
+        entry.target.classList.remove('reset');
+      } else {
+        // Leaving viewport — check direction
+        const rect = entry.boundingClientRect;
+        // If element left from TOP (user scrolled DOWN past it, keep it revealed)
+        // If element left from BOTTOM (user scrolled UP past it, reset it)
+        if (rect.top > 0) {
+          // Element is below viewport (user scrolled UP) — reset for replay
+          entry.target.classList.remove('revealed');
+          entry.target.classList.add('reset');
+        }
+        // If element is above viewport (scrolled down past it) — keep revealed
       }
     });
   }, revealObserverOptions);
 
-  revealItems.forEach(item => {
+  animElements.forEach(item => {
     revealObserver.observe(item);
   });
 

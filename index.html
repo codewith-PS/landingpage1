@@ -11,12 +11,16 @@
 
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
   <!-- Local Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
 
   <!-- Navigation Bar -->
   <header id="main-header">
@@ -50,15 +54,14 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-slider">
-      <div class="slide active" style="background-image: url('images/website_images/KVIR_NEW_VIEW_001_TWILIGHT.jpg');">
-      </div>
-      <div class="slide" style="background-image: url('images/website_images/ELEVATION_VIEW_002_DUSK.jpg');"></div>
-      <div class="slide" style="background-image: url('images/website_images/PODIUM_LANDSCAPE_VIEW_DAY.jpg');"></div>
+    <div class="hero-video-bg">
+      <video autoplay muted loop playsinline id="hero-bg-video">
+        <source src="videos/Video Project-compressed (1).mp4" type="video/mp4">
+      </video>
     </div>
 
-    <div class="container">
-      <div class="hero-content reveal-item">
+    <!-- <div class="container">
+      <div class="hero-content reveal-left">
         <span class="hero-tag">Signature Landmark</span>
         <h1 class="hero-title heading-serif">RGs Pleiaddes</h1>
         <p class="price-tag">3 & 4 BHK Luxury Apartments | Starting ₹ 1.10 Cr*</p>
@@ -76,10 +79,10 @@
           <button class="btn-gold" onclick="openEnquiryModal('Download Brochure')">Download Brochure</button>
           <a href="#about" class="btn-outline" style="margin-left: 15px;">Explore More</a>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Lead Form Card -->
-      <div class="hero-form-wrapper reveal-item" style="transition-delay: 0.2s;">
+    <!-- Lead Form Card -->
+    <!-- <div class="hero-form-wrapper reveal-right" style="transition-delay: 0.2s;">
         <div class="glass-form-card">
           <h2 class="form-title heading-serif">Schedule A Visit</h2>
           <p class="form-subtitle">Register below to unlock exclusive inaugural offers</p>
@@ -108,7 +111,7 @@
           </form>
           <span class="rera-badge">RERA Reg No: UPRERAPRJ415309/09/2025</span>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -116,7 +119,7 @@
   <section class="about" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image-wrapper reveal-item">
+        <div class="about-image-wrapper reveal-left">
           <div class="about-image"
             style="background-image: url('images/website_images/KVIR_AERIAL_VIEW_001_TWILIGHT.jpg');"></div>
           <div class="about-badge">
@@ -125,9 +128,10 @@
           </div>
         </div>
 
-        <div class="about-content reveal-item" style="transition-delay: 0.2s;">
-          <span class="section-subtitle">The Legacy of Luxury</span>
-          <h2 class="section-title heading-serif" style="text-align: left; padding-bottom: 15px; margin-bottom: 25px;">
+        <div class="about-content reveal-right" style="transition-delay: 0.2s;">
+          <span class="section-subtitle reveal-top">The Legacy of Luxury</span>
+          <h2 class="section-title heading-serif reveal-item"
+            style="text-align: left; padding-bottom: 15px; margin-bottom: 25px; transition-delay: 0.15s;">
             About RG Pleiaddes</h2>
           <p class="about-desc">
             RG Pleiaddes is an elite residential development nested in the prime corridor of Sector 1, Noida Extension.
@@ -143,7 +147,7 @@
           </p>
 
           <div class="about-features">
-            <div class="feature-item">
+            <div class="feature-item reveal-bottom" style="transition-delay: 0.05s;">
               <div class="feature-icon-wrapper">
                 <i class="fa-solid fa-expand"></i>
               </div>
@@ -153,7 +157,7 @@
               </div>
             </div>
 
-            <div class="feature-item">
+            <div class="feature-item reveal-bottom" style="transition-delay: 0.15s;">
               <div class="feature-icon-wrapper">
                 <i class="fa-solid fa-building"></i>
               </div>
@@ -163,7 +167,7 @@
               </div>
             </div>
 
-            <div class="feature-item">
+            <div class="feature-item reveal-bottom" style="transition-delay: 0.25s;">
               <div class="feature-icon-wrapper">
                 <i class="fa-solid fa-layer-group"></i>
               </div>
@@ -173,7 +177,7 @@
               </div>
             </div>
 
-            <div class="feature-item">
+            <div class="feature-item reveal-bottom" style="transition-delay: 0.35s;">
               <div class="feature-icon-wrapper">
                 <i class="fa-solid fa-compass"></i>
               </div>
@@ -191,14 +195,14 @@
   <!-- Prices Section -->
   <section class="prices" id="prices">
     <div class="container">
-      <div class="section-header reveal-item">
+      <div class="section-header reveal-scale">
         <span class="section-subtitle">Exquisite Value</span>
         <h2 class="section-title heading-serif">Pricing & Configurations</h2>
       </div>
 
       <div class="prices-grid">
         <!-- 3 BHK Card -->
-        <div class="price-card reveal-item">
+        <div class="price-card reveal-left">
           <span class="card-badge">Most Popular</span>
           <h3 class="heading-serif">3 BHK Residences</h3>
 
@@ -222,7 +226,7 @@
         </div>
 
         <!-- 4 BHK Card -->
-        <div class="price-card reveal-item" style="transition-delay: 0.2s;">
+        <div class="price-card reveal-right" style="transition-delay: 0.2s;">
           <h3 class="heading-serif">4 BHK Residences</h3>
 
           <div class="price-details">
@@ -250,12 +254,12 @@
   <!-- Floor Plans Section -->
   <section class="floorplans" id="floorplans">
     <div class="container">
-      <div class="section-header reveal-item">
+      <div class="section-header reveal-scale">
         <span class="section-subtitle">Designed to Perfection</span>
         <h2 class="section-title heading-serif">Floor Configurations</h2>
       </div>
 
-      <div class="floorplan-tabs reveal-item">
+      <div class="floorplan-tabs reveal-scale">
         <button class="tab-btn active" onclick="switchFloorplan(0)">3 BHK + 2 Toilet</button>
         <button class="tab-btn" onclick="switchFloorplan(1)">3 BHK + 3 Toilet</button>
         <button class="tab-btn" onclick="switchFloorplan(2)">4 BHK + 3 Toilet</button>
@@ -263,7 +267,7 @@
       </div>
 
       <!-- Tab 0: 3BHK + 2 Toilet -->
-      <div class="floorplan-content active reveal-item" id="fp-tab-0">
+      <div class="floorplan-content active reveal-scale" id="fp-tab-0">
         <div class="floorplan-image"
           onclick="openLightbox('images/New_Floor_Plan/1.webp', '3 BHK + 2 Toilet Floor Plan')">
           <img src="images/New_Floor_Plan/1.webp" alt="3 BHK + 2 Toilet Plan">
@@ -301,7 +305,7 @@
       </div>
 
       <!-- Tab 1: 3BHK + 3 Toilet -->
-      <div class="floorplan-content reveal-item" id="fp-tab-1">
+      <div class="floorplan-content reveal-scale" id="fp-tab-1">
         <div class="floorplan-image"
           onclick="openLightbox('images/New_Floor_Plan/2.webp', '3 BHK + 3 Toilet Floor Plan')">
           <img src="images/New_Floor_Plan/2.webp" alt="3 BHK + 3 Toilet Plan">
@@ -339,7 +343,7 @@
       </div>
 
       <!-- Tab 2: 4BHK + 3 Toilet -->
-      <div class="floorplan-content reveal-item" id="fp-tab-2">
+      <div class="floorplan-content reveal-scale" id="fp-tab-2">
         <div class="floorplan-image"
           onclick="openLightbox('images/New_Floor_Plan/3.webp', '4 BHK + 3 Toilet Floor Plan')">
           <img src="images/New_Floor_Plan/3.webp" alt="4 BHK + 3 Toilet Plan">
@@ -377,7 +381,7 @@
       </div>
 
       <!-- Tab 3: 4BHK + 3 Toilet + Lounge -->
-      <div class="floorplan-content reveal-item" id="fp-tab-3">
+      <div class="floorplan-content reveal-scale" id="fp-tab-3">
         <div class="floorplan-image"
           onclick="openLightbox('images/New_Floor_Plan/4.webp', '4 BHK + 3 Toilet + Lounge Floor Plan')">
           <img src="images/New_Floor_Plan/4.webp" alt="4 BHK + 3 Toilet + Lounge Plan">
@@ -420,7 +424,7 @@
   <section class="payment-section" id="payment">
     <div class="container">
       <div class="payment-grid">
-        <div class="payment-info reveal-item">
+        <div class="payment-info reveal-left">
           <span class="section-subtitle">Smart Investments</span>
           <h2 class="payment-title heading-serif"
             style="color: var(--text-primary); font-size: 2.5rem; margin-bottom: 25px;">Flexible Payment Plans</h2>
@@ -430,7 +434,7 @@
           </p>
 
           <div class="payment-steps">
-            <div class="payment-step">
+            <div class="payment-step reveal-left" style="transition-delay: 0.1s;">
               <div class="step-num">1</div>
               <div class="step-details">
                 <h4>10% Booking Amount</h4>
@@ -438,7 +442,7 @@
               </div>
             </div>
 
-            <div class="payment-step">
+            <div class="payment-step reveal-left" style="transition-delay: 0.25s;">
               <div class="step-num">2</div>
               <div class="step-details">
                 <h4>Milestone Payments</h4>
@@ -446,7 +450,7 @@
               </div>
             </div>
 
-            <div class="payment-step">
+            <div class="payment-step reveal-left" style="transition-delay: 0.4s;">
               <div class="step-num">3</div>
               <div class="step-details">
                 <h4>Balance on Possession</h4>
@@ -464,7 +468,7 @@
           </div>
         </div>
 
-        <div class="payment-image-wrapper reveal-item" style="transition-delay: 0.2s;">
+        <div class="payment-image-wrapper reveal-right" style="transition-delay: 0.2s;">
           <img src="images/Payment_plan.png" alt="Payment Plan Detail Table" class="payment-img">
         </div>
       </div>
@@ -474,68 +478,68 @@
   <!-- Amenities Section -->
   <section class="amenities" id="amenities">
     <div class="container">
-      <div class="section-header reveal-item">
+      <div class="section-header reveal-scale">
         <span class="section-subtitle">Modern Comforts</span>
         <h2 class="section-title heading-serif">World Class Amenities</h2>
       </div>
 
       <div class="amenities-grid">
-        <div class="amenity-card reveal-item">
+        <div class="amenity-card reveal-scale">
           <div class="amenity-icon"><i class="fa-solid fa-tree"></i></div>
           <h4>Lush Green Lawn</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.05s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.05s;">
           <div class="amenity-icon"><i class="fa-solid fa-wine-glass"></i></div>
           <h4>Banquet Hall</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.1s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.1s;">
           <div class="amenity-icon"><i class="fa-solid fa-person-running"></i></div>
           <h4>Jogging Track & Gym</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.15s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.15s;">
           <div class="amenity-icon"><i class="fa-solid fa-couch"></i></div>
           <h4>Deck Seating</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.2s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.2s;">
           <div class="amenity-icon"><i class="fa-solid fa-water"></i></div>
           <h4>Water Feature</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.25s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.25s;">
           <div class="amenity-icon"><i class="fa-solid fa-seedling"></i></div>
           <h4>Senior Citizen Park</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.3s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.3s;">
           <div class="amenity-icon"><i class="fa-solid fa-child-reaching"></i></div>
           <h4>Yoga & Aerobics</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.35s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.35s;">
           <div class="amenity-icon"><i class="fa-solid fa-basketball"></i></div>
           <h4>Basketball Court</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.4s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.4s;">
           <div class="amenity-icon"><i class="fa-solid fa-gamepad"></i></div>
           <h4>Billiard/Cards Room</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.45s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.45s;">
           <div class="amenity-icon"><i class="fa-solid fa-person-swimming"></i></div>
           <h4>Swimming Pool</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.5s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.5s;">
           <div class="amenity-icon"><i class="fa-solid fa-shapes"></i></div>
           <h4>Toddlers' Play Area</h4>
         </div>
 
-        <div class="amenity-card reveal-item" style="transition-delay: 0.55s;">
+        <div class="amenity-card reveal-scale" style="transition-delay: 0.55s;">
           <div class="amenity-icon"><i class="fa-solid fa-cubes"></i></div>
           <h4>Multipurpose Court</h4>
         </div>
@@ -546,14 +550,14 @@
   <!-- Gallery Section -->
   <section class="gallery" id="gallery">
     <div class="container">
-      <div class="section-header reveal-item">
+      <div class="section-header reveal-scale">
         <span class="section-subtitle">Visual Splendor</span>
         <h2 class="section-title heading-serif">Project Renderings</h2>
       </div>
 
       <div class="gallery-grid">
         <!-- Gallery Items -->
-        <div class="gallery-item reveal-item"
+        <div class="gallery-item reveal-scale"
           onclick="openLightbox('images/website_images/KVIR_CLUBDROP_OFF_VIEW_TWILIGHT.jpg', 'Clubhouse Drop-Off Point View')">
           <img src="images/website_images/KVIR_CLUBDROP_OFF_VIEW_TWILIGHT.jpg" alt="Clubhouse Drop-Off View"
             class="gallery-img">
@@ -563,7 +567,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.05s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.05s;"
           onclick="openLightbox('images/website_images/AMPHITHEATRE_VIEW_003_TWILIGHT.jpg', 'Open Air Amphitheatre View')">
           <img src="images/website_images/AMPHITHEATRE_VIEW_003_TWILIGHT.jpg" alt="Amphitheatre Twilight View"
             class="gallery-img">
@@ -573,7 +577,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.1s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.1s;"
           onclick="openLightbox('images/website_images/STILT_AREA_CHESS_COURT_VIEW_DAY.jpg', 'Podium Level Stilt & Chess Area')">
           <img src="images/website_images/STILT_AREA_CHESS_COURT_VIEW_DAY.jpg" alt="Chess Court Day View"
             class="gallery-img">
@@ -583,7 +587,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.15s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.15s;"
           onclick="openLightbox('images/website_images/CARDS_ROOM.jpg', 'Air-Conditioned Indoor Cards Room')">
           <img src="images/website_images/CARDS_ROOM.jpg" alt="Cards Room rendering" class="gallery-img">
           <div class="gallery-overlay">
@@ -592,7 +596,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.2s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.2s;"
           onclick="openLightbox('images/website_images/INDOOR_POOL.jpg', 'All-weather Indoor Swimming Pool')">
           <img src="images/website_images/INDOOR_POOL.jpg" alt="Indoor Pool rendering" class="gallery-img">
           <div class="gallery-overlay">
@@ -601,7 +605,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.25s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.25s;"
           onclick="openLightbox('images/website_images/RESTAURANT_CAM-02.jpg', 'Elegant Clubhouse Dining Lounge')">
           <img src="images/website_images/RESTAURANT_CAM-02.jpg" alt="Dining Restaurant rendering" class="gallery-img">
           <div class="gallery-overlay">
@@ -610,7 +614,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.3s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.3s;"
           onclick="openLightbox('images/website_images/AROMA_GARDEN_VIEW_001_DAY.jpg', 'Landscaped Botanical Aroma Garden')">
           <img src="images/website_images/AROMA_GARDEN_VIEW_001_DAY.jpg" alt="Aroma Garden rendering"
             class="gallery-img">
@@ -620,7 +624,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.35s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.35s;"
           onclick="openLightbox('images/website_images/TENNIS_COURT_VIEW_001_DAY.jpg', 'International standard Tennis Court')">
           <img src="images/website_images/TENNIS_COURT_VIEW_001_DAY.jpg" alt="Tennis Court rendering"
             class="gallery-img">
@@ -630,7 +634,7 @@
           </div>
         </div>
 
-        <div class="gallery-item reveal-item" style="transition-delay: 0.4s;"
+        <div class="gallery-item reveal-scale" style="transition-delay: 0.4s;"
           onclick="openLightbox('images/website_images/KIDS _PLAY_AREA_VIEW_002_DAY.jpg', 'Toddlers & Kids Play Area Sandbox')">
           <img src="images/website_images/KIDS _PLAY_AREA_VIEW_002_DAY.jpg" alt="Kids Play Area Rendering"
             class="gallery-img">
@@ -646,13 +650,13 @@
   <!-- Location Section -->
   <section class="location" id="location">
     <div class="container">
-      <div class="section-header reveal-item">
+      <div class="section-header reveal-scale">
         <span class="section-subtitle">Prime Proximity</span>
         <h2 class="section-title heading-serif">Location Advantage</h2>
       </div>
 
       <div class="location-grid">
-        <div class="location-list reveal-item">
+        <div class="location-list reveal-left">
           <div class="location-item">
             <div class="loc-icon-wrapper"><i class="fa-solid fa-car"></i></div>
             <div class="loc-text">
@@ -695,7 +699,7 @@
         </div>
 
         <!-- Embedded Location Map -->
-        <div class="map-wrapper reveal-item" style="transition-delay: 0.2s;">
+        <div class="map-wrapper reveal-right" style="transition-delay: 0.2s;">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.205244510006!2d77.4262176!3d28.6086207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee2206779435%3A0xe54e3d368e7cc530!2sSector%201%2C%20Bisrakh%20Jalalpur%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201318!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -707,13 +711,13 @@
   <!-- Contact Us Section -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-header reveal-item">
+      <div class="section-header reveal-scale">
         <span class="section-subtitle">Get In Touch</span>
         <h2 class="section-title heading-serif">Contact Us</h2>
       </div>
 
       <div class="contact-grid">
-        <div class="contact-info-card reveal-item">
+        <div class="contact-info-card reveal-left">
           <div class="contact-details">
             <div class="contact-detail-item">
               <i class="fa-solid fa-location-dot"></i>
@@ -750,7 +754,7 @@
         </div>
 
         <!-- Form Details -->
-        <div class="contact-form-wrapper reveal-item" style="transition-delay: 0.2s;">
+        <div class="contact-form-wrapper reveal-right" style="transition-delay: 0.2s;">
           <div class="glass-form-card" style="background: var(--bg-secondary);">
             <h3 class="form-title heading-serif">Send Us A Message</h3>
             <p class="form-subtitle">Fill in the details below, and our luxury property consultant will reach out to you
@@ -788,7 +792,7 @@
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
+        <div class="footer-brand reveal-bottom">
           <div class="footer-logo">
             <img src="images/logodark.png" alt="RGs Pleiaddes Dark Logo">
           </div>
@@ -798,11 +802,11 @@
           </p>
         </div>
 
-        <div>
+        <div class="reveal-bottom" style="transition-delay: 0.15s;">
           <h3 class="footer-title">Quick Navigation</h3>
           <ul class="footer-links">
             <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About</a></li>
-            <li><a href="#prices"><i class="fa-solid fa-angle-right"></i> Price & Configurations</a></li>
+            <li><a href="#prices"><i class="fa-solid fa-angle-right"></i> Price &amp; Configurations</a></li>
             <li><a href="#floorplans"><i class="fa-solid fa-angle-right"></i> Floor Plans</a></li>
             <li><a href="#amenities"><i class="fa-solid fa-angle-right"></i> Project Amenities</a></li>
             <li><a href="#gallery"><i class="fa-solid fa-angle-right"></i> Renderings Gallery</a></li>
@@ -810,18 +814,18 @@
           </ul>
         </div>
 
-        <div>
+        <div class="reveal-bottom" style="transition-delay: 0.3s;">
           <h3 class="footer-title">Customer Support</h3>
           <ul class="footer-links">
             <li><a href="tel:+919818795156"><i class="fa-solid fa-phone"></i> +91 9818795156</a></li>
             <li><a href="mailto:info@rgspleiaddes.com"><i class="fa-solid fa-envelope"></i> info@rgspleiaddes.com</a>
             </li>
-            <li><a href="#contact"><i class="fa-solid fa-circle-question"></i> Help & Inquiries</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-circle-question"></i> Help &amp; Inquiries</a></li>
           </ul>
         </div>
       </div>
 
-      <p class="disclaimer-text">
+      <p class="disclaimer-text reveal-item" style="transition-delay: 0.1s;">
         <strong>Disclaimer:</strong> The content, images, floor plans, and renderings shown on this website are
         indicative and for representation purposes only. The information provided here does not constitute an offer,
         sale, or commitment. RGs Pleiaddes is registered under Uttar Pradesh RERA Registration Number
@@ -829,7 +833,7 @@
         development rules.
       </p>
 
-      <div class="copyright-bar">
+      <div class="copyright-bar reveal-item" style="transition-delay: 0.2s;">
         <p>&copy; 2026 RGs Pleiaddes.</p>
         <p>RERA Registration: UPRERAPRJ415309/09/2025</p>
       </div>
@@ -915,6 +919,11 @@
 
   <!-- Script File -->
   <script src="script.js"></script>
+  <!-- <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
 </body>
 
 </html>
